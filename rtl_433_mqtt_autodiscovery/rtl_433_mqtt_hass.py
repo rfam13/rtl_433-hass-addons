@@ -482,6 +482,16 @@ mappings = {
             "name": "Lightning Strike Count",
             "value_template": "{{ value|int }}"
         }
+       },
+
+    "reed_open": {
+        "device_type": "binary_sensor",
+        "object_suffix": "reed_open",
+        "config": {
+            "force_update": "true",
+            "payload_on": "1",
+            "payload_off": "0"
+        }
     }
 }
 
