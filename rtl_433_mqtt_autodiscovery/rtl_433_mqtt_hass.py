@@ -170,26 +170,7 @@ mappings = {
             "value_template": "{{ value|float }}"
         }
     },
-    "time": {
-        "device_type": "sensor",
-        "object_suffix": "UTC",
-        "config": {
-            "device_class": "timestamp",
-            "name": "Timestamp",
-            "icon": "mdi:clock-in"
-        }
-    },
-    "battery_ok": {
-        "device_type": "sensor",
-        "object_suffix": "B",
-        "config": {
-            "device_class": "battery",
-            "name": "Battery",
-            "unit_of_measurement": "%",
-            "value_template": "{{ float(value|int) * 99 + 1 }}"
-        }
-    },
-
+   
     "humidity": {
         "device_type": "sensor",
         "object_suffix": "H",
@@ -364,26 +345,7 @@ mappings = {
         }
     },
 
-    "tamper": {
-        "device_type": "binary_sensor",
-        "object_suffix": "tamper",
-        "config": {
-            "force_update": "true",
-            "payload_on": "1",
-            "payload_off": "0"
-        }
-    },
-
-    "alarm": {
-        "device_type": "binary_sensor",
-        "object_suffix": "alarm",
-        "config": {
-            "force_update": "true",
-            "payload_on": "1",
-            "payload_off": "0"
-        }
-    },
-
+  
     "rssi": {
         "device_type": "sensor",
         "object_suffix": "rssi",
@@ -486,7 +448,7 @@ mappings = {
 
     "reed_open": {
         "device_type": "binary_sensor",
-        "object_suffix": "reed_open",
+        "object_suffix": "door_win_status",
         "config": {
             "force_update": "true",
             "payload_on": "1",
