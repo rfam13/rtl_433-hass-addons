@@ -444,17 +444,49 @@ mappings = {
             "name": "Lightning Strike Count",
             "value_template": "{{ value|int }}"
         }
-       },
+    },
 
     "reed_open": {
         "device_type": "binary_sensor",
-        "object_suffix": "door_win_status",
+        "object_suffix": "reed_open",
+        "config": {
+            "force_update": "true",
+            "payload_on": "1",
+            "payload_off": "0"
+        }
+    },
+  
+    "alarm": {
+        "device_type": "binary_sensor",
+        "object_suffix": "alarm",
+        "config": {
+            "force_update": "true",
+            "payload_on": "1",
+            "payload_off": "0"
+        }
+    },
+    
+    "contact_open": {
+        "device_type": "binary_sensor",
+        "object_suffix": "contact_open",
+        "config": {
+            "force_update": "true",
+            "payload_on": "1",
+            "payload_off": "0"
+        }
+    },
+  
+    "tamper": {
+        "device_type": "binary_sensor",
+        "object_suffix": "tamper",
         "config": {
             "force_update": "true",
             "payload_on": "1",
             "payload_off": "0"
         }
     }
+    
+  
 }
 
 
