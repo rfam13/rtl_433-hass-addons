@@ -13,7 +13,7 @@
   "usb": true,
   "udev": true,
   "options": {
-    "rtl_433_conf_file": "",
+    "rtl_433_conf_file": "rtl_433.conf",
     "retain": true
   },
   "schema": {
